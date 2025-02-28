@@ -13,7 +13,7 @@ const App = observer(() => {
 
   return (
     <div className='flex flex-col h-screen w-screen p-4 gap-4'>
-      <div className='flex flex-col flex-grow h-64 overflow-y-auto'>
+      <div className='flex flex-col flex-grow h-0 overflow-y-auto'>
         <div className='flex-grow'></div>
         {
           messageStore.messages.map((msg, index) => (
