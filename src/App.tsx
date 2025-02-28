@@ -7,7 +7,7 @@ const App = observer(() => {
 
   return (
     <div className='flex flex-col h-screen w-screen justify-end p-4 gap-4'>
-      <div className='flex flex-col'>
+      <div className='flex flex-col overflow-y-auto justify-end'>
       {
         messageStore.messages.map(($0) => (
           <p>{ $0 }</p>
