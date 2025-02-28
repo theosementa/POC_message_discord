@@ -10,8 +10,8 @@ export class MessageStore {
   currentMessage: string = ""
   messages: string[] = []
 
-  addMessage(text: string) {
-    this.messages.push(text)
+  sendMessage() {
+    this.messages.push(this.currentMessage)
     this.currentMessage = ""
   }
 }
